@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+.body {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  border: 2px solid rgb(117, 117, 117);
+  display: grid;
+  grid-template-columns: repeat(16, 30px);
+  width: 482px;
+}
+
+.block {
+  width: 30px;
+  height: 30px;
+}
+
+.block.active {
+  background-color: rgb(65, 65, 65);
+}
+
+.reset-btn {
+  margin: 20px;
+  padding: 10px 15px;
+  border: transparent;
+  color: rgb(151, 136, 173);
+  font-size: 30px;
+  background-color: #fff;
+}
+
+.reset-btn:hover {
+  background-color: rgb(151, 136, 173);
+  border-radius: 2px;
+  color: #fff;
+}
