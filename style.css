@@ -1,42 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Questrial', sans-serif;
+  color: rgb(65, 65, 65);
 }
 
-.body {
-  margin-top: 50px;
+body {
+  background-color: rgb(223, 223, 223);
+}
+
+.body-container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.container {
-  border: 2px solid rgb(117, 117, 117);
-  display: grid;
-  grid-template-columns: repeat(16, 30px);
-  width: 482px;
+.title {
+  padding: 20px;
+  font-size: 47px;
 }
 
-.block {
-  width: 30px;
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 35px;
+}
+
+.grid-container {
+  /* border: 2px solid rgb(117, 117, 117); */
+
+  background-color: #fff;
+  box-shadow: 9px 7px 15px 3px rgba(0, 0, 0, 0.1);
+  display: grid;
+  /* grid-template-columns: repeat(30, 20px [co-start]); */
+  width: 500px;
+  height: 500px;
+}
+
+.grid-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.input-description {
+  margin-bottom: 15px;
+  font-size: 23px;
+}
+
+#grid-count {
+  width: 140px;
   height: 30px;
+  border: transparent;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#grid-count:focus {
+  outline: none;
+}
+
+.submit-btn {
+  padding: 7px 30px;
+  background-color: #fff;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 5px;
+  margin: 0 7px;
+}
+
+.submit-btn:hover {
+  background-color: rgb(218, 218, 218);
+  border: 1px solid rgb(108, 108, 108);
 }
 
 .block.active {
   background-color: rgb(65, 65, 65);
+  border: 1px solid rgb(65, 65, 65);
 }
 
-.reset-btn {
-  margin: 20px;
-  padding: 10px 15px;
-  border: transparent;
-  color: rgb(151, 136, 173);
-  font-size: 30px;
+.clear-btn {
+  padding: 10px 30px;
   background-color: #fff;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 5px;
+  font-size: 17px;
 }
 
-.reset-btn:hover {
-  background-color: rgb(151, 136, 173);
-  border-radius: 2px;
-  color: #fff;
+.clear-btn:hover {
+  background-color: rgb(218, 218, 218);
+  border: 1px solid rgb(108, 108, 108);
 }
